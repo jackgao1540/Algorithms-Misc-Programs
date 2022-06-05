@@ -5,7 +5,7 @@ using namespace std;
 int main() {
     int password;
     cin >> password;
-    const int PASSWORD = 1540;
+    const int PASSWORD = 1;
     if (password == PASSWORD) {
         cout << "correct" << endl;
     } else {
