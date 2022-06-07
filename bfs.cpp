@@ -49,25 +49,25 @@ vector <int> bfs(int a, int b) {
         vector <int> path = dist.front();
         dist.pop_front();
         
-        //debug
-        cout << "Visiting: " << top + 1 << endl;
+        // debug
+        // cout << "Visiting: " << top + 1 << endl;
 
         if (visited[top]) continue;
-        cout << "    Not visited!" << endl;
+        // cout << "    Not visited!" << endl;
         visited[top] = true;
         if (top == b) {
             return path;
         } 
-        cout << "    Has " << nodes[top].connections.size() << " neighbours!" << endl;
-        cout << "    Added: ";
+        // cout << "    Has " << nodes[top].connections.size() << " neighbours!" << endl;
+        // cout << "    Added: ";
         for(int i = 0; i < nodes[top].connections.size(); i++){
             pQ.push_back(nodes[top].connections[i].index);
-            cout << nodes[top].connections[i].index + 1 << ' ';
+            // cout << nodes[top].connections[i].index + 1 << ' ';
             vector <int> temp = path;
             temp.push_back(nodes[top].connections[i].index);
             dist.push_back(temp);
         }
-        cout << endl << endl;
+        // cout << endl << endl;
     }
     vector <int> noSol; noSol.push_back(-1);
     return noSol;
