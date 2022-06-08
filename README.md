@@ -1,7 +1,7 @@
 # Algorithms and Miscellanous Programs
 Random algorithms and programs I found interesting to make!
 
-*Run the .exe's instead of running the C++ code in an IDE; It's much faster and easier to use. My apologies if that is too obvious.*
+*Run the .exe's instead of running the C++ code in an IDE; it's much faster and easier to use. My apologies if that is too obvious.*
 
 # Current list:
 * Bracket Validator (some Toronto slang involved)
